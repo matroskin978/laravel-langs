@@ -46,6 +46,8 @@
     </div>
 </nav>
 
+@dump(app()->getLocale())
+
 @yield('content')
 
 </body>
