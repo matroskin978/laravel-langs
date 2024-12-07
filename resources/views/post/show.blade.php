@@ -4,7 +4,7 @@
 
     <div class="container my-3">
 
-        <h1>Post: Post title</h1>
+        <h1>{{ __('posts.post') }}: Post title</h1>
 
         <div class="card mb-5">
             <div class="card-header">

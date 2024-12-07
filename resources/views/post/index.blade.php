@@ -4,7 +4,7 @@
 
     <div class="container my-3">
 
-        <h1>Blog</h1>
+        <h1>{{ __('posts.posts_list') }}</h1>
 
         @forelse($posts as $post)
             <div class="card mb-5">
