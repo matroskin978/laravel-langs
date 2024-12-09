@@ -9,11 +9,11 @@
         @forelse($posts as $post)
             <div class="card mb-5">
                 <div class="card-header">
-                    {{ $post->title }}
+                    {{ $post->desc->title }}
                 </div>
                 <div class="card-body">
                     <div class="card-text">
-                        {!! $post->content !!}
+                        {!! $post->desc->content !!}
                     </div>
                     <a href="{{ route('posts.show', $post->id) }}" class="btn btn-primary">Read more</a>
                 </div>

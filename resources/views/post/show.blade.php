@@ -4,14 +4,14 @@
 
     <div class="container my-3">
 
-        <h1>{{ __('posts.post') }}: Post title</h1>
+        <h1>{{ __('posts.post') }}: {{ $post->desc->title }}</h1>
 
         <div class="card mb-5">
             <div class="card-header">
-                Featured
+                {{ $post->desc->title }}
             </div>
             <div class="card-body">
-                <div class="card-text">With supporting text below as a natural lead-in to additional content.</div>
+                <div class="card-text">{!! $post->desc->content !!}</div>
             </div>
         </div>
 
