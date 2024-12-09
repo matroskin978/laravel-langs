@@ -13,7 +13,7 @@ class PostController extends Controller
         /*$posts = Post::query()
                 ->where('posts_desc.lang', '=', app()->getLocale())
                 ->leftJoin('posts_desc', 'posts.id', '=', 'posts_desc.post_id')->paginate();*/
-        $posts = Post::query()->with('desc')->paginate();
+        $posts = Post::query()->has('desc')->with('desc')->paginate();
         return view('post.index', compact('posts'));
     }
 
